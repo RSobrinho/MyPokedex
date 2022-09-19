@@ -16,9 +16,18 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: hsl(0, 0%, 100%);
+  background: rgb(255, 85, 100);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 85, 100, 0.9556197478991597) 41%,
+    rgba(217, 54, 81, 0.9500175070028011) 83%
+  );
+  color: var(--ft-color1);
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 input {

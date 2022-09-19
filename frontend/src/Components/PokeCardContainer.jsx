@@ -4,7 +4,7 @@ import PokeCard from './PokeCard'
 const PokeCardsContainer = props => {
   const getPokemons = () => {
     let listaPokemons = []
-    for (let i = 1; i < 200; i++) {
+    for (let i = 1; i < 50; i++) {
       listaPokemons.push(<PokeCard key={i} pokeId={i} />)
     }
     return listaPokemons

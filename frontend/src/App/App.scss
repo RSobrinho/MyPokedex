@@ -1,4 +1,15 @@
-@forward '../../scss/globals/';
+@forward '../scss/globals/';
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 3rem 5rem;
+  flex-wrap: wrap;
+}
 
 .card {
   background: var(--bg-color2);
@@ -14,7 +25,7 @@
   border: 0.2rem solid hsl(350, 92%, 32%);
 
   &:hover {
-    filter: brightness(95%);
+    filter: brightness(98%);
     transition: 0.2s;
   }
 

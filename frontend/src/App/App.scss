@@ -3,7 +3,121 @@
 .App {
   width: 128rem;
   background-color: var(--bg-color1);
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  &__maincontainer {
+    margin: 0rem 3rem;
+    // display: flex;
+    // align-items: center;
+    color: black;
+  }
+}
+
+.header {
+  background-image: url('https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/cdn/70b39ec0-a8ca-437b-b726-226e9466df79/f9dfb894-fc04-42dd-8008-392f54a278b2.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 45rem;
+
+  &__title {
+    padding: 2rem;
+    font-size: 13rem;
+    color: var(--bg-color2);
+  }
+
+  &__desc {
+    width: 60rem;
+
+    &:hover {
+      animation: run 0.2s infinite linear;
+
+      @keyframes run {
+        0% {
+          background: linear-gradient(
+            90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        25% {
+          background: linear-gradient(
+            90deg,
+            rgba(253, 29, 29, 1) 20%,
+            rgba(252, 176, 69, 1) 70%,
+            rgba(131, 58, 180, 1) 90%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        50% {
+          background: linear-gradient(
+            90deg,
+            rgba(253, 29, 29, 1) 0%,
+            rgba(252, 176, 69, 1) 50%,
+            rgba(131, 58, 180, 1) 80%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        75% {
+          background: linear-gradient(
+            90deg,
+            rgba(252, 176, 69, 1) 15% rgba(131, 58, 180, 1) 40%,
+            rgba(253, 29, 29, 1) 70%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        100% {
+          background: linear-gradient(
+            90deg,
+            rgba(131, 58, 180, 1) 15%,
+            rgba(253, 29, 29, 1) 60%,
+            rgba(252, 176, 69, 1) 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    color: red;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 1rem 2rem;
+
+    &:visited {
+      color: red;
+    }
+
+    & h3 {
+      font-size: 3rem;
+    }
+  }
 }
 
 .container {
@@ -53,4 +167,13 @@
   &__btn {
     border: 0.1rem solid hsl(231, 52%, 47%);
   }
+}
+
+.navblock {
+  width: 30rem;
+  height: 50rem;
+  background-color: tomato;
+  top: 0;
+  left: 0;
+  position: fixed;
 }

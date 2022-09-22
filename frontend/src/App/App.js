@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="App__maincontainer">
-        <PokeCardsContainer />
         <Navbar />
+        <PokeCardsContainer />
       </div>
     </div>
   )

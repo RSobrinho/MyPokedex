@@ -35,12 +35,14 @@ input {
   background: var(--bg-color4);
   border-style: none;
   transition: 0.1s;
+  outline: none;
 
   &:hover {
     filter: brightness(95%);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     filter: brightness(90%);
   }
 }

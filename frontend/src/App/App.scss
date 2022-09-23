@@ -206,3 +206,17 @@
     @include shadow1;
   }
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  & input {
+    height: 8rem;
+    margin: 5rem;
+    font-size: 3rem;
+  }
+
+}
